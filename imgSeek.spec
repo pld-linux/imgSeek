@@ -2,7 +2,7 @@ Summary:	Photo collection manager and viewer with content-based query
 Summary(pl):	Zarz±dca oraz przegl±darka kolekcji zdjêæ
 Name:		imgSeek
 Version:	0.8.3
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/Graphics/X11
 Vendor:		Ricardo Niederberger Cabral <nieder@mail.ru>
@@ -76,4 +76,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_pixmapsdir}/*
 
 %files devel
+%defattr(644,root,root,755)
 %{py_sitedir}/imgSeekLib/*.py

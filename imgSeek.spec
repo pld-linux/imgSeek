@@ -7,6 +7,7 @@ License:	GPL v2
 Group:		Applications/Graphics/X11
 Vendor:		Ricardo Niederberger Cabral <nieder@mail.ru>
 Source0:	http://dl.sourceforge.net/imgseek/%{name}-%{version}.tar.bz2
+# Source0-md5:	c6defce999f2777869c4ad62231259d2
 Source1:	%{name}.desktop
 Patch0:		%{name}-settings.patch
 URL:		http://imgseek.sourceforge.net/
@@ -50,12 +51,13 @@ ca³ej aplikacji.
 
 %build
 QTDIR=%{_prefix}
-%__python setup.py build
+%{__python} setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
-%__python setup.py install --root=$RPM_BUILD_ROOT
+
+%{__python} setup.py install --root=$RPM_BUILD_ROOT
 install imgSeek.png $RPM_BUILD_ROOT%{_pixmapsdir}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
@@ -64,9 +66,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog COPYING PKG-INFO README THANKS TODO
+%doc AUTHORS ChangeLog README THANKS TODO
 %attr(755,root,root) %{_bindir}/*
-%{_datadir}/%{name}/*
+%{_datadir}/%{name}
+%dir %{py_sitedir}/imgSeekLib
 %{py_sitedir}/imgSeekLib/*.pyc
 %attr(755,root,root) %{py_sitedir}/imgSeekLib/*.so
 %{_desktopdir}/*

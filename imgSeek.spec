@@ -1,22 +1,24 @@
 Summary:	Photo collection manager and viewer with content-based query
 Summary(pl):	Zarz±dca oraz przegl±darka kolekcji zdjêæ
 Name:		imgSeek
-Version:	0.8.3
-Release:	2
+Version:	0.8.4
+Release:	1
 License:	GPL v2
 Group:		Applications/Graphics/X11
 Vendor:		Ricardo Niederberger Cabral <nieder@mail.ru>
 Source0:	http://dl.sourceforge.net/imgseek/%{name}-%{version}.tar.bz2
-# Source0-md5:	ec3910da0eb373e2393bd06551607ee4
+# Source0-md5:	6b79e7e7e588fa9afa71240d5c2d0b52
 Source1:	%{name}.desktop
 Patch0:		%{name}-settings.patch
 URL:		http://imgseek.sourceforge.net/
+BuildRequires:	python-Imaging-devel
+BuildRequires:	python-PyQt >= 3.5
 BuildRequires:	python-devel >= 2.2.0
 BuildRequires:	python-modules >= 2.2.0
-BuildRequires:	python-PyQt >= 3.4
 BuildRequires:	qt-devel >= 3.0.0
+Requires:	python-Imaging
+Requires:	python-PyQt >= 3.5
 Requires:	python-modules >= 2.2.0
-Requires:	python-PyQt >= 3.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

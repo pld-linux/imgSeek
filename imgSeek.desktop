@@ -7,5 +7,5 @@ Exec=imgSeek %F
 Icon=imgseek.png
 Terminal=false
 Type=Application
-Categories=QT;Graphics;Viewer;
+Categories=Qt;Graphics;Viewer;
 # vi: encoding=utf-8

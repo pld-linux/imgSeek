@@ -59,7 +59,9 @@ ca³ej aplikacji.
 %prep
 %setup -q
 %patch0 -p0
+%if "%{_lib}" == "lib64"
 %patch1 -p1
+%endif
 %if %{without python23}
 sed -i 's/python2\.3/python2.4/' setup.py
 %endif

@@ -5,6 +5,6 @@ Comment=Photo collection manager with content-based search.
 Comment[pl]=Zarządca oraz przeglądarka kolekcji zdjęć.
 Exec=imgSeek %F
 Icon=imgseek.png
-Terminal=0
+Terminal=false
 Type=Application
 Categories=QT;Graphics;X-Viewer

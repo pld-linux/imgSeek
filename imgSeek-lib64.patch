@@ -1,10 +1,11 @@
---- imgSeek-0.8.4/setup.py.orig	2004-12-27 16:34:35.798632624 +0100
-+++ imgSeek-0.8.4/setup.py	2004-12-27 16:34:56.714452936 +0100
-@@ -59,6 +59,7 @@
-     include_dirs.append("/usr/include/qt")
-     library_dirs.append("/usr/lib/qt")
-     library_dirs.append("/usr/lib/")
-+    library_dirs.append("/usr/lib64/")
+--- imgSeek-0.8.4/distutils/sysconfig.py.orig	2004-12-27 17:10:57.167834056 +0100
++++ imgSeek-0.8.4/distutils/sysconfig.py	2004-12-27 17:11:26.449382584 +0100
+@@ -100,7 +100,7 @@
  
- print "#################################### Check QT"
- 
+     if os.name == "posix":
+         libpython = os.path.join(prefix,
+-                                 "lib", "python" + get_python_version())
++                                 "lib64", "python" + get_python_version())
+         if standard_lib:
+             return libpython
+         else:

@@ -1,6 +1,6 @@
---- setup.py~	2003-07-16 21:48:38.000000000 +0200
-+++ setup.py	2003-09-23 21:18:55.000000000 +0200
-@@ -2,10 +2,10 @@
+--- setup.py.oryg	2004-02-27 21:36:09.000000000 +0000
++++ setup.py	2004-03-23 07:14:43.319579056 +0000
+@@ -2,7 +2,7 @@
  
  #############################[ Parameters you should change if install failed ]#########################################
  # qtdir should point to the directory where QT is installed. (Inside this dir you should have a lib and include dir)
@@ -8,19 +8,15 @@
 +qtdir=["/usr/"]      # ["/usr/qt/3/"] if you have a Gentoo system
  
  # python_dir should point to the directory where Python header files may be found.. (Inside this dir you should have a Python.h)
--python_dir="/usr/include/python2.2"
-+python_dir="/usr/include/python2.3"
+ python_dir="/usr/include/python2.3"
+@@ -56,8 +56,8 @@
+ """
+ else:
+     print "Qt is recent enough: "+str(qt.QT_VERSION_STR)
+-    include_dirs.append("/usr/include/qt3")
+-    library_dirs.append("/usr/lib/qt3")
++    include_dirs.append("/usr/include/qt")
++    library_dirs.append("/usr/lib/qt")
+     library_dirs.append("/usr/lib/")
  
- # QT library to use. If qt-mt is not found, you may need to change it to "qt"
- qtlibraries = ["qt-mt"]   # you may want to try "qt" if your QT has no multithreading support
-@@ -76,8 +76,8 @@
-     if gqtdir not in qtdir: qtdir.append(gqtdir)
-     
- for qdir in qtdir:
--    include_dirs.append(qdir+"include")
--    library_dirs.append(qdir+"lib")
-+    include_dirs.append(qdir+"include/qt")
-+    library_dirs.append(qdir+"lib/qt")
- hasQT=0
- 
- for dir in include_dirs:
+ print "#################################### Check QT"

@@ -1,5 +1,5 @@
-Summary:	Photo collection manager and viewer with content-based query.
-Summary(pl):	Zarz±dca oraz przegl±darka kolekcji zdjêæ.
+Summary:	Photo collection manager and viewer with content-based query
+Summary(pl):	Zarz±dca oraz przegl±darka kolekcji zdjêæ
 Name:		imgSeek
 Version:	0.8.2
 Release:	1
@@ -19,29 +19,30 @@ Requires:	python-PyQt >= 3.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-imgSeek is a photo collection manager and viewer with content-based search and
-many other features. The query is expressed either as a rough sketch painted by
-the user or as another image you supply (or an image in your collection).
+imgSeek is a photo collection manager and viewer with content-based
+search and many other features. The query is expressed either as a
+rough sketch painted by the user or as another image you supply (or an
+image in your collection).
 
 %description -l pl
-imgSeek jest zarz±dc± i przegl±dark± kolekcji zdjêæ z opart± na zawarto¶ci
-wyszukiwark± oraz wieloma innymi funkcjami. Wyboru mo¿na dokonywaæ zarówno przy
-pomocy narysowanego przez u¿ytkownika kursorem kszta³tu jak i w tradycyjny
-sposób.
+imgSeek jest zarz±dc± i przegl±dark± kolekcji zdjêæ z opart± na
+zawarto¶ci wyszukiwark± oraz wieloma innymi funkcjami. Wyboru mo¿na
+dokonywaæ zarówno przy pomocy narysowanego przez u¿ytkownika kursorem
+kszta³tu jak i w tradycyjny sposób.
 
 %package devel
-Summary:	Source files of imgSeek.
-Summary(pl):	Pliki ¼ród³owe imgSeek.
+Summary:	Source files of imgSeek
+Summary(pl):	Pliki ¼ród³owe imgSeek
 Group:		Development/Languages/Python
 Requires:	%{name} = %{version}
 
 %description devel
-Python source files provided with imgSeek. They pull together the GUI of
-whole application.
+Python source files provided with imgSeek. They pull together the GUI
+of whole application.
 
 %description devel -l pl
-Pliki ¼ród³owe pythona dostarczane z imgSeek. Sk³adaj± siê one na GUI ca³ej
-aplikacji.
+Pliki ¼ród³owe pythona dostarczane z imgSeek. Sk³adaj± siê one na GUI
+ca³ej aplikacji.
 
 %prep
 %setup -q

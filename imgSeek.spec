@@ -14,6 +14,7 @@ Source0:	http://dl.sourceforge.net/imgseek/%{name}-%{version}.tar.bz2
 # Source0-md5:	6b79e7e7e588fa9afa71240d5c2d0b52
 Source1:	%{name}.desktop
 Patch0:		%{name}-settings.patch
+Patch1:		%{name}-lib64.patch
 URL:		http://imgseek.sourceforge.net/
 BuildRequires:	python-Imaging-devel
 BuildRequires:	python-PyQt >= 3.5
@@ -58,6 +59,7 @@ ca³ej aplikacji.
 %prep
 %setup -q
 %patch0 -p0
+%patch1 -p1
 %if %{without python23}
 sed -i 's/python2\.3/python2.4/' setup.py
 %endif

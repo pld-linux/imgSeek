@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_with	python23	# build for python 2.3, not 2.4
+
 Summary:	Photo collection manager and viewer with content-based query
 Summary(pl):	Zarz±dca oraz przegl±darka kolekcji zdjêæ
 Name:		imgSeek
@@ -17,6 +21,7 @@ BuildRequires:	python-devel >= 2.2.0
 BuildRequires:	python-modules >= 2.2.0
 BuildRequires:	qt-devel >= 3.0.0
 BuildRequires:	rpmbuild(macros) >= 1.174
+BuildRequires:	sed >= 4.0
 Requires:	python-Imaging
 Requires:	python-PyQt >= 3.5
 %pyrequires_eq	python-libs
@@ -53,6 +58,9 @@ ca³ej aplikacji.
 %prep
 %setup -q
 %patch0 -p0
+%if %{without python23}
+sed -i 's/python2\.3/python2.4/' setup.py
+%endif
 
 %build
 QTDIR=%{_prefix} %{__python} setup.py build

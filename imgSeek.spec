@@ -52,8 +52,7 @@ ca³ej aplikacji.
 %patch0 -p0
 
 %build
-QTDIR=%{_prefix}
-%{__python} setup.py build
+QTDIR=%{_prefix} %{__python} setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT

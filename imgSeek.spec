@@ -4,7 +4,7 @@ Name:		imgSeek
 Version:	0.8.4
 Release:	3
 License:	GPL v2
-Group:		Applications/Graphics/X11
+Group:		X11/Applications/Graphics
 Vendor:		Ricardo Niederberger Cabral <nieder@mail.ru>
 Source0:	http://dl.sourceforge.net/imgseek/%{name}-%{version}.tar.bz2
 # Source0-md5:	6b79e7e7e588fa9afa71240d5c2d0b52

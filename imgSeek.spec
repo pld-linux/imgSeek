@@ -1,13 +1,13 @@
 Summary:	Photo collection manager and viewer with content-based query
 Summary(pl):	Zarz±dca oraz przegl±darka kolekcji zdjêæ
 Name:		imgSeek
-Version:	0.8.4
-Release:	3
+Version:	0.8.5
+Release:	1
 License:	GPL v2
 Group:		X11/Applications/Graphics
 Vendor:		Ricardo Niederberger Cabral <nieder@mail.ru>
 Source0:	http://dl.sourceforge.net/imgseek/%{name}-%{version}.tar.bz2
-# Source0-md5:	6b79e7e7e588fa9afa71240d5c2d0b52
+# Source0-md5:	d4c3723ce6050636789336795afa353d
 Source1:	%{name}.desktop
 Patch0:		%{name}-settings.patch
 Patch1:		%{name}-lib64.patch
@@ -58,7 +58,7 @@ ca³ej aplikacji.
 %if "%{_lib}" == "lib64"
 %patch1 -p1
 %endif
-sed -i 's/python2\.3/python%{py_ver}/' setup.py
+sed -i 's/python2\.4/python%{py_ver}/' setup.py
 
 %build
 QTDIR=%{_prefix} %{__python} setup.py build

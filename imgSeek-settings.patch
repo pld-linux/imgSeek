@@ -4,11 +4,11 @@
  
  #############################[ Parameters you should change if install failed ]#########################################
  # qtdir should point to the directory where QT is installed. (Inside this dir you should have a lib and include dir)
--qtdir=["/usr/share/qt/"]      # ["/usr/qt/3/"] if you have a Gentoo system
+-qtdir=["/usr/share/qt3/"]      # ["/usr/qt/3/"] if you have a Gentoo system
 +qtdir=["/usr/"]      # ["/usr/qt/3/"] if you have a Gentoo system
  
  # python_dir should point to the directory where Python header files may be found.. (Inside this dir you should have a Python.h)
- python_dir="/usr/include/python2.3"
+ python_dir="/usr/include/python2.4"
 @@ -56,8 +56,8 @@
  """
  else:

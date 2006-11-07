@@ -82,7 +82,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{py_sitedir}/imgSeekLib
 %{py_sitedir}/imgSeekLib/*.pyc
 %attr(755,root,root) %{py_sitedir}/imgSeekLib/*.so
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
 %{_pixmapsdir}/*
 
 %files devel

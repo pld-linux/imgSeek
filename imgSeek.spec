@@ -2,7 +2,7 @@ Summary:	Photo collection manager and viewer with content-based query
 Summary(pl):	Zarz±dca oraz przegl±darka kolekcji zdjêæ
 Name:		imgSeek
 Version:	0.8.5
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		X11/Applications/Graphics
 Vendor:		Ricardo Niederberger Cabral <nieder@mail.ru>

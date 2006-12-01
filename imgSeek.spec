@@ -17,6 +17,7 @@ BuildRequires:	python-PyQt >= 3.5
 BuildRequires:	python-devel >= 2.2.0
 BuildRequires:	python-modules >= 2.2.0
 BuildRequires:	qt-devel >= 3.0.0
+BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.174
 BuildRequires:	sed >= 4.0
 Requires:	python-PIL

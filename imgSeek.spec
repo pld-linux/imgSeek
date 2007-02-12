@@ -1,5 +1,5 @@
 Summary:	Photo collection manager and viewer with content-based query
-Summary(pl):	Zarz±dca oraz przegl±darka kolekcji zdjêæ
+Summary(pl.UTF-8):   ZarzÄ…dca oraz przeglÄ…darka kolekcji zdjÄ™Ä‡
 Name:		imgSeek
 Version:	0.8.5
 Release:	1
@@ -31,15 +31,15 @@ search and many other features. The query is expressed either as a
 rough sketch painted by the user or as another image you supply (or an
 image in your collection).
 
-%description -l pl
-imgSeek jest zarz±dc± i przegl±dark± kolekcji zdjêæ z opart± na
-zawarto¶ci wyszukiwark± oraz wieloma innymi funkcjami. Wyboru mo¿na
-dokonywaæ zarówno przy pomocy narysowanego przez u¿ytkownika kursorem
-kszta³tu jak i w tradycyjny sposób.
+%description -l pl.UTF-8
+imgSeek jest zarzÄ…dcÄ… i przeglÄ…darkÄ… kolekcji zdjÄ™Ä‡ z opartÄ… na
+zawartoÅ›ci wyszukiwarkÄ… oraz wieloma innymi funkcjami. Wyboru moÅ¼na
+dokonywaÄ‡ zarÃ³wno przy pomocy narysowanego przez uÅ¼ytkownika kursorem
+ksztaÅ‚tu jak i w tradycyjny sposÃ³b.
 
 %package devel
 Summary:	Source files of imgSeek
-Summary(pl):	Pliki ¼ród³owe imgSeek
+Summary(pl.UTF-8):   Pliki ÅºrÃ³dÅ‚owe imgSeek
 Group:		Development/Languages/Python
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 %pyrequires_eq	python-libs
@@ -48,9 +48,9 @@ Requires:	%{name} = %{epoch}:%{version}-%{release}
 Python source files provided with imgSeek. They pull together the GUI
 of whole application.
 
-%description devel -l pl
-Pliki ¼ród³owe pythona dostarczane z imgSeek. Sk³adaj± siê one na GUI
-ca³ej aplikacji.
+%description devel -l pl.UTF-8
+Pliki ÅºrÃ³dÅ‚owe pythona dostarczane z imgSeek. SkÅ‚adajÄ… siÄ™ one na GUI
+caÅ‚ej aplikacji.
 
 %prep
 %setup -q

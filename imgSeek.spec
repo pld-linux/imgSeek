@@ -1,5 +1,5 @@
 Summary:	Photo collection manager and viewer with content-based query
-Summary(pl.UTF-8):   Zarządca oraz przeglądarka kolekcji zdjęć
+Summary(pl.UTF-8):	Zarządca oraz przeglądarka kolekcji zdjęć
 Name:		imgSeek
 Version:	0.8.5
 Release:	1
@@ -39,7 +39,7 @@ kształtu jak i w tradycyjny sposób.
 
 %package devel
 Summary:	Source files of imgSeek
-Summary(pl.UTF-8):   Pliki źródłowe imgSeek
+Summary(pl.UTF-8):	Pliki źródłowe imgSeek
 Group:		Development/Languages/Python
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 %pyrequires_eq	python-libs

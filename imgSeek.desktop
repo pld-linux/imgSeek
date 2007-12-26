@@ -1,10 +1,9 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=imgSeek
 Comment=Photo collection manager with content-based search.
 Comment[pl]=Zarządca oraz przeglądarka kolekcji zdjęć.
 Exec=imgSeek %F
-Icon=imgseek.png
+Icon=imgseek
 Terminal=false
 Type=Application
 Categories=Qt;Graphics;Viewer;

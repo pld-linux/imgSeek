@@ -54,9 +54,9 @@ całej aplikacji.
 
 %prep
 %setup -q
-%patch0 -p0
+%patch -P0 -p0
 %if "%{_lib}" == "lib64"
-%patch1 -p1
+%patch -P1 -p1
 %endif
 sed -i 's/python2\.4/python%{py_ver}/' setup.py
 
